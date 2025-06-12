@@ -1,7 +1,10 @@
 services:
   - type: web
     name: n8n
-    env: node
+    env: docker
+    image: n8nio/n8n:latest
     plan: free
-    buildCommand: npm install
-    startCommand: npm run start
+    # Render skal vide, at n8n kører på port 5678
+    ports:
+      - internal: 5678
+        protocol: http
