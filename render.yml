@@ -3,5 +3,5 @@ services:
     name: n8n
     env: node
     plan: free
-    buildCommand: npm run build
-    startCommand: n8n start
+    buildCommand: npm install
+    startCommand: npm start
