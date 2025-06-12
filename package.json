@@ -6,6 +6,6 @@
     "n8n": "^1.45.0"
   },
   "scripts": {
-    "start": "n8n"
+    "start": ""npx n8n"
   }
 }
